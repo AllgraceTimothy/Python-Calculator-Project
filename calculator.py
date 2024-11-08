@@ -1,25 +1,25 @@
 def product(x, y):
-  product = x * y
+  product = round(x * y, 4)
   print('Product=',product)
 
 def quotient(x, y):
-  quotient = x / y
+  quotient = round(x / y, 4)
   print('Quotient=',quotient)
 
 def sum(x, y):
-  sum = x + y
+  sum = round(x + y, 4)
   print('Sum=',sum)
 
 def difference(x, y):
-  difference = x - y
+  difference = round(x - y, 4)
   print('Difference=',difference)
 
 def square(x):
-  square = x ** 2
+  square = round(x ** 2, 4)
   print('Square=',square)
 
 def square_root(x):
-  square_root = x**(1/2)
+  square_root = round(x**(1/2), 4)
   print('Square Root=',square_root)
 
 operations = ['1','2','3','4','5','6']
@@ -33,9 +33,9 @@ def main():
       continue
 
     else:
-      x = int(input("X: "))
+      x = float(input("X: "))
     if operation not in ['5', '6']:
-      y = int(input("Y: "))
+      y = float(input("Y: "))
     else:
       y = None
     
